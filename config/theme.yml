@@ -54,7 +54,16 @@ global_settings:
    to_enable:
      - ps_linklist
   hooks:
+    custom_hooks:
+      - name: displayMainMenu
+        title: displayMainMenu
+      - name: displayHomeSlider
+        title: displayHomeSlider
     modules_to_hook:
+      displayMainMenu:
+        - ps_mainmenu
+      displayHomeSlider:
+        - ps_imageslider
       displayNav1:
         - ps_contactinfo
       displayNav2:

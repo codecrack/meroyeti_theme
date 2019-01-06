@@ -70,14 +70,12 @@ input {
     font-weight: 300;
 }
 
-#header .header-main  #main-wrapper {
+#header .header-main  #main-menu {
 	background-color: #e6e6fa !important;
-    padding-bottom: 0px !important;
-    padding-top: 0px !important;
-    text-align: center !important;
-    box-shadow: none;
-    overflow-x: hidden;
+	text-align: center !important;
+	overflow-x: hidden;
 }
+
 
 #header .header-main #top-menu{
 	 margin: 5px 0px;
@@ -145,6 +143,18 @@ figure {
     /*margin: 9px;*/
     padding-bottom: 20px;
     opacity: 0.96;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: all;
 }
 
 .popover .category {

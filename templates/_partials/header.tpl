@@ -86,7 +86,14 @@
   </div>
   <div class="header-main">
     <div id="main-wrapper">
-      {hook h='displayTop'}
+      <div id="main-menu">
+        {hook h='displayMainMenu'}
+      </div>
+      {if $page.page_name == 'index'}
+        <div>
+          {hook h='displayHomeSlider'}
+        </div>
+      {/if}
     </div>
   </div>
   {hook h='displayNavFullWidth'}
