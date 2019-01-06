@@ -58,7 +58,7 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+        <div id="_desktop_logo" style="display:inline-block">
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
@@ -71,10 +71,8 @@
                 </a>
             {/if}
         </div>
-        <div class="col-md-10 col-sm-12 position-static">
-          {hook h='displayTop'}
-          <div class="clearfix"></div>
-        </div>
+        {hook h='displaySearch'}
+        <div class="clearfix"></div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
@@ -84,6 +82,11 @@
           <div id="_mobile_contact_link"></div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div id="main-wrapper">
+      {hook h='displayTop'}
     </div>
   </div>
   {hook h='displayNavFullWidth'}
